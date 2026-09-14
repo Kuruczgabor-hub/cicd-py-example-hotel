@@ -14,6 +14,11 @@ class TestHootel(object):
         options.add_argument('--guest')
         options.add_argument('--start-maximized')
         options.add_argument('__headless')
+        options.add_argument("--headless=new")
+        options.add_argument("--no-sandbox")
+        options.add_argument("--disable-dev-shm-usage")
+
+
 
 
         self.browser = webdriver.Chrome(options=options)
